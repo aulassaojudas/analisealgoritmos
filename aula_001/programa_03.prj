@@ -1,0 +1,14 @@
+for all 256 characters do 
+    assign zero to the counter 
+end for 
+while there are more characters in the file do 
+    get the next character 
+    increment the counter for this character by one 
+end while
+
+for( int a =1; a <= N a ++){
+    for( int b = 1; b <= M-1; b++){
+        for( )
+        print()
+    }
+}

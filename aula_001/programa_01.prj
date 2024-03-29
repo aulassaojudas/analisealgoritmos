@@ -1,0 +1,14 @@
+largest = a 
+    if b > largest then 
+        largest = b 
+    end if 
+    if c > largest then 
+        largest = c 
+    end if 
+    if d > largest then 
+        largest = d 
+    end if 
+return largest
+
+
+

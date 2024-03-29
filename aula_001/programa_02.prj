@@ -1,0 +1,29 @@
+if a > b then 
+    if a > c then 
+        if a > d then
+            return a 
+        else 
+            return d 
+        end if 
+    else 
+        if c > d then  
+            return c 
+        else 
+            return d 
+        end if 
+    end if 
+else 
+    if b > c then 
+        if b > d then 
+            return b 
+        else 
+            return d 
+        end if 
+    else 
+        if c > d then 
+            return c 
+        else 
+            return d 
+        end if 
+    end if 
+end if
