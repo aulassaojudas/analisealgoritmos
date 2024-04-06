@@ -1,19 +1,41 @@
+/*
+ O código implementa uma lista circular.
 
-class No {
-    int dado;
-    No proximo;
+### Classe `No`
+Esta classe interna representa um nó da lista, com os seguintes dados
+- `dado`   : O valor armazenado no nó.
+- `proximo`: Uma referência ao próximo nó na lista.
 
-    public No(int dado) {
-        this.dado = dado;
-        this.proximo = null;
-    }
-}
+#### Construtor
+- `No(int dado)`: Configura o `dado` do nó e inicializa `proximo` como `null`.
 
+### Classe `ListaCircular`
+Esta classe gerencia a lista circular.
+
+#### Atributos
+- `cabeca`: Uma referência ao primeiro nó na lista.
+- `cauda` : Uma referência ao último nó na lista.
+
+#### Métodos
+- `inserir(int dado)` : Adiciona um novo nó com o valor especificado ao final da lista.
+- `remover(int chave)`: Remove o nó que contém o valor especificado (`chave`).
+- `imprimirLista()`   : Imprime todos os elementos da lista em um formato circular. 
+
+ */
 class ListaCircular {
+    class No {
+        int dado;
+        No proximo;
+    
+        public No(int dado) {
+            this.dado = dado;
+            this.proximo = null;
+        }
+    }
+
     private No cabeca = null;
     private No cauda = null;
 
-    // Inserir no fim da lista
     public void inserir(int dado) {
         No novoNo = new No(dado);
         if (cabeca == null) {
@@ -22,10 +44,9 @@ class ListaCircular {
             cauda.proximo = novoNo;
         }
         cauda = novoNo;
-        cauda.proximo = cabeca; // Faz o último nó apontar para o cabeça, formando um círculo
+        cauda.proximo = cabeca;
     }
 
-    // Remover um elemento da lista
     public boolean remover(int chave) {
         if (cabeca == null) {
             return false;
@@ -48,10 +69,9 @@ class ListaCircular {
             anterior = atual;
             atual = atual.proximo;
         } while (atual != cabeca);
-        return false; // Elemento para remover não foi encontrado
+        return false;
     }
 
-    // Imprimir a lista
     public void imprimirLista() {
         if (cabeca != null) {
             No atual = cabeca;

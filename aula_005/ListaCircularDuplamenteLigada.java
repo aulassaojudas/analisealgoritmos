@@ -1,3 +1,30 @@
+/*
+ O código implementa uma lista circular duplamente ligada
+
+### Classe `No`
+
+#### Atributos:
+- `dado`    : O valor armazenado no nó.
+- `anterior`: Referência ao nó anterior na lista.
+- `proximo` : Referência ao próximo nó na lista.
+
+#### Construtor:
+- `No(int dado)`: Inicializa o nó com o valor fornecido e deixa as referências `anterior` e `proximo` como `null`.
+
+### Classe `ListaCircularDuplamenteLigada`
+
+#### Atributos:
+- `cabeca`: Referência ao primeiro nó da lista.
+- `cauda` : Referência ao último nó da lista.
+
+#### Métodos:
+
+  - `inserir(int dado)`: Adiciona um novo nó ao final da lista:
+  - `remover(int dado)`: Remove um nó que contém o valor especificado:
+  - `imprimirDireto()` : Imprime todos os dados dos nós na ordem direta, começando da `cabeca` e seguindo os nós `proximo`.
+  - `imprimirInverso()`: Imprime todos os dados dos nós na ordem inversa, começando da `cauda` e seguindo os nós `anterior`.
+
+ */
 class No {
     int dado;
     No anterior;

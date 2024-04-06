@@ -1,8 +1,8 @@
 
 public class ListaLigadaSimples {
     private static class No {
-        int dado; // este é o valor contido no nó
-        No proximo; // referência para o próximo nó da lista
+        int dado; 
+        No proximo; 
 
         No(int dado ){
             this.dado = dado; 
@@ -10,13 +10,12 @@ public class ListaLigadaSimples {
         }
     }
 
-    private No cabeca; // este nó é uma referência para o primeiro no da lista
+    private No cabeca; 
 
     public ListaLigadaSimples() {
         this.cabeca = null; 
     }
 
-    // este é o método para inserir no início da lista 
     public void inserirInicio( int novoDado ){
         No novoNo = new No( novoDado );
         novoNo.proximo = this.cabeca; 
