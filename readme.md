@@ -35,3 +35,5 @@ Dentro deste repositório, você encontrará diversos materiais que cobrem vári
 Recomendamos começar pela leitura das notas de aula para construir uma base sólida nos conceitos teóricos da análise de algoritmos. Em seguida, explore os exemplos de código para ver como esses conceitos são aplicados na prática. Por fim, teste seu entendimento e habilidades de análise resolvendo os exercícios propostos.
 
 Esperamos que este material o ajude a desenvolver uma compreensão profunda da análise de algoritmos e aprimore suas habilidades em ciência da computação. Boa sorte e bom estudo!
+
+Link para os PPTs de aula (https://1drv.ms/f/s!Ak9ktbfEZ59YpLpesVVGjHXNl7pvSA?e=7HC0re)

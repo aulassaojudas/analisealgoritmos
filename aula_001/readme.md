@@ -69,6 +69,6 @@ Os dois pseudocódigos, embora estruturalmente diferentes, compartilham a mesma 
 - **Complexidade Temporal**: Ambos têm uma complexidade temporal de O(1), ou seja, eles têm tempo constante de execução, uma vez que o número de operações (comparações) não muda com o tamanho da entrada. O número de comparações é sempre três, não importa os valores de `a`, `b`, `c` e `d`.
 
 **Conclusão**:
-O primeiro pseudocódigo é mais simples e direto, o que pode ser mais fácil de entender e manter. 
-O segundo pseudocódigo, apesar de mais complexo visualmente, pode ser preferido em contextos onde uma estrutura de decisão condicional é mais clara ou necessária por outros motivos de design. 
-Ambos são igualmente eficientes em termos de tempo de execução para o caso específico de determinar o maior de quatro números.
+- O primeiro pseudocódigo é mais simples e direto, o que pode ser mais fácil de entender e manter. 
+- O segundo pseudocódigo, apesar de mais complexo visualmente, pode ser preferido em contextos onde uma estrutura de decisão condicional é mais clara ou necessária por outros motivos de design. 
+- Ambos são igualmente eficientes em termos de tempo de execução para o caso específico de determinar o maior de quatro números.
