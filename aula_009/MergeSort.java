@@ -1,4 +1,3 @@
-package aula_009;
 
 public class MergeSort {
 
@@ -17,7 +16,7 @@ public class MergeSort {
             int m = l + (r - l) / 2;
 
             // Ordena a primeira e a segunda metades
-            mergeSort(arr, l, m);
+            mergeSort(arr, l, m); //(1 24, 45, 63, 85) -> (24,45) 
             mergeSort(arr, m + 1, r);
 
             // Mescla as metades ordenadas

@@ -1,4 +1,3 @@
-package aula_009;
 
 public class SelectionSort {
 
@@ -8,10 +7,10 @@ public class SelectionSort {
             int minIndex = i;
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[minIndex]) {
-                    minIndex = j; // Encontrar o menor elemento no subarray não ordenado
+                    minIndex = j; 
                 }
             }
-            // Trocar o menor encontrado com o primeiro elemento do subarray
+           
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
