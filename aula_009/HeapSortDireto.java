@@ -13,11 +13,11 @@ public class HeapSortDireto {
     private static void heapify(int[] array, int i, int m) {
         int j;
         while (2 * i + 1 <= m) {
-            j = 2 * i + 1;
-            if (j < m && array[j] < array[j + 1])
-                j++;
-            if (array[i] < array[j]) {
-                swapKeys(array, i, j);
+            j = 2 * i + 1; /// filho da esquerda
+            if (j < m && array[j] < array[j + 1]) // será que tem filho da direita
+                j++; // usar o filho da direita
+            if (array[i] < array[j]) { // se o pai é maior que o maior filho
+                swapKeys(array, i, j); // troco 
                 i = j;
             } else {
                 break;

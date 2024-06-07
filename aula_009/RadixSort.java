@@ -15,14 +15,15 @@ public class RadixSort {
         int[] output = new int[n]; 
         int[] count = new int[10]; 
 
+        // conta os digitos usanso exp (posição) 
         for (int i = 0; i < n; i++) {
             count[(arr[i] / exp) % 10]++;
         }
-
+        // conta as ocorrencias 
         for (int i = 1; i < 10; i++) {
             count[i] += count[i - 1];
         }
-
+        // cria o array de saida 
         for (int i = n - 1; i >= 0; i--) {
             output[count[(arr[i] / exp) % 10] - 1] = arr[i];
             count[(arr[i] / exp) % 10]--;

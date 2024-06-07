@@ -9,7 +9,6 @@ public class CountingSort {
         }
 
         int[] count = new int[max + 1];
-
         for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
@@ -19,7 +18,6 @@ public class CountingSort {
         }
 
         int[] output = new int[arr.length];
-
         for (int i = arr.length - 1; i >= 0; i--) {
             output[count[arr[i]] - 1] = arr[i];
             count[arr[i]]--;
